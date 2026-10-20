@@ -1,0 +1,21 @@
+workflows:
+  android-debug:
+    name: Lailaba Device Agent Android
+    max_build_duration: 60
+    instance_type: linux
+    environment:
+      java: 17
+    scripts:
+      - name: Download Gradle 8.9
+        script: |
+          set -e
+          if [ ! -d "$HOME/gradle-8.9" ]; then
+            curl -fL https://services.gradle.org/distributions/gradle-8.9-bin.zip -o /tmp/gradle.zip
+            unzip -q /tmp/gradle.zip -d "$HOME"
+          fi
+      - name: Build debug APK
+        script: |
+          set -e
+          "$HOME/gradle-8.9/bin/gradle" --no-daemon assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
