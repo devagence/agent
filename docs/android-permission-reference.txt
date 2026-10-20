@@ -1,0 +1,248 @@
+LAILABA DEVICE AGENT — ANDROID PERMISSION REFERENCE
+Purpose: Reference list of permissions mentioned in the supplied Android manifest.
+
+IMPORTANT NOTES
+- This is a reference list, not a recommendation to request every permission.
+- Declaring a permission does not automatically grant access.
+- Some permissions are deprecated, restricted, privileged, signature-protected, role-limited, or unavailable to ordinary apps.
+- Runtime permissions and special access may require user approval.
+- Request only permissions needed for clearly disclosed, legitimate features. Respect user consent and Android/Google Play policies.
+- This list does not provide full control of a device by itself.
+
+01. INTERNET AND NETWORK
+- android.permission.INTERNET
+- android.permission.ACCESS_NETWORK_STATE
+- android.permission.ACCESS_WIFI_STATE
+- android.permission.CHANGE_WIFI_STATE
+- android.permission.CHANGE_NETWORK_STATE
+- android.permission.NEARBY_WIFI_DEVICES
+- android.permission.CHANGE_WIFI_MULTICAST_STATE
+- android.permission.BLUETOOTH
+- android.permission.BLUETOOTH_ADMIN
+- android.permission.BLUETOOTH_CONNECT
+- android.permission.BLUETOOTH_SCAN
+- android.permission.BLUETOOTH_ADVERTISE
+- android.permission.NFC
+- android.permission.TRANSMIT_IR
+- android.permission.USE_BIOMETRIC
+- android.permission.USE_FINGERPRINT
+
+02. LOCATION
+- android.permission.ACCESS_COARSE_LOCATION
+- android.permission.ACCESS_FINE_LOCATION
+- android.permission.ACCESS_BACKGROUND_LOCATION
+- android.permission.ACCESS_MEDIA_LOCATION
+- android.permission.LOCATION_HARDWARE
+- android.permission.CONTROL_LOCATION_UPDATES
+
+03. CAMERA AND FLASH
+- android.permission.CAMERA
+- android.permission.FLASHLIGHT
+- android.permission.RECORD_AUDIO
+
+04. MICROPHONE AND AUDIO
+- android.permission.MODIFY_AUDIO_SETTINGS
+- android.permission.CAPTURE_AUDIO_OUTPUT
+- android.permission.CAPTURE_AUDIO_HOTWORD
+- android.permission.CAPTURE_MEDIA_OUTPUT
+- android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT
+
+05. CONTACTS
+- android.permission.READ_CONTACTS
+- android.permission.WRITE_CONTACTS
+- android.permission.GET_ACCOUNTS
+
+06. PHONE AND CALLS
+- android.permission.READ_PHONE_STATE
+- android.permission.CALL_PHONE
+- android.permission.READ_CALL_LOG
+- android.permission.WRITE_CALL_LOG
+- android.permission.ADD_VOICEMAIL
+- android.permission.USE_SIP
+- android.permission.PROCESS_OUTGOING_CALLS
+- android.permission.ANSWER_PHONE_CALLS
+- android.permission.READ_PHONE_NUMBERS
+- android.permission.ACCEPT_HANDOVER
+- android.permission.MANAGE_OWN_CALLS
+- android.permission.MODIFY_PHONE_STATE
+
+07. SMS AND MESSAGING
+- android.permission.SEND_SMS
+- android.permission.RECEIVE_SMS
+- android.permission.READ_SMS
+- android.permission.RECEIVE_MMS
+- android.permission.RECEIVE_WAP_PUSH
+- android.permission.WRITE_SMS
+- android.permission.READ_CELL_BROADCASTS
+
+08. STORAGE AND FILES
+- android.permission.READ_EXTERNAL_STORAGE
+- android.permission.WRITE_EXTERNAL_STORAGE
+- android.permission.MANAGE_EXTERNAL_STORAGE
+- android.permission.READ_MEDIA_IMAGES
+- android.permission.READ_MEDIA_VIDEO
+- android.permission.READ_MEDIA_AUDIO
+- android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+- android.permission.MANAGE_MEDIA
+- android.permission.WRITE_MEDIA_STORAGE
+
+09. CALENDAR
+- android.permission.READ_CALENDAR
+- android.permission.WRITE_CALENDAR
+
+10. SENSORS AND PHYSICAL ACTIVITY
+- android.permission.BODY_SENSORS
+- android.permission.BODY_SENSORS_BACKGROUND
+- android.permission.ACTIVITY_RECOGNITION
+- android.permission.HIGH_SAMPLING_RATE_SENSORS
+- android.permission.UWB_RANGING
+
+11. NOTIFICATIONS AND BACKGROUND EXECUTION
+- android.permission.POST_NOTIFICATIONS
+- android.permission.RECEIVE_BOOT_COMPLETED
+- android.permission.FOREGROUND_SERVICE
+- android.permission.FOREGROUND_SERVICE_CAMERA
+- android.permission.FOREGROUND_SERVICE_MICROPHONE
+- android.permission.FOREGROUND_SERVICE_LOCATION
+- android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+- android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+- android.permission.FOREGROUND_SERVICE_DATA_SYNC
+- android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+- android.permission.FOREGROUND_SERVICE_PHONE_CALL
+- android.permission.WAKE_LOCK
+- android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+- android.permission.SCHEDULE_EXACT_ALARM
+- android.permission.USE_EXACT_ALARM
+- android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+- android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND
+
+12. SPECIAL APP ACCESS
+- android.permission.SYSTEM_ALERT_WINDOW
+- android.permission.WRITE_SETTINGS
+- android.permission.PACKAGE_USAGE_STATS
+- android.permission.REQUEST_INSTALL_PACKAGES
+- android.permission.REQUEST_DELETE_PACKAGES
+- android.permission.ACCESS_NOTIFICATION_POLICY
+
+13. DEVICE ADMINISTRATION AND SECURITY
+- android.permission.DISABLE_KEYGUARD
+- android.permission.REQUEST_PASSWORD_COMPLEXITY
+- android.permission.RESET_PASSWORD
+- android.permission.SET_WALLPAPER
+- android.permission.SET_WALLPAPER_HINTS
+- android.permission.LOCK_DEVICE
+- android.permission.REBOOT
+- android.permission.SHUTDOWN
+
+14. APPLICATION AND PACKAGE MANAGEMENT
+- android.permission.QUERY_ALL_PACKAGES
+- android.permission.DELETE_PACKAGES
+- android.permission.INSTALL_PACKAGES
+- android.permission.CLEAR_APP_CACHE
+- android.permission.CLEAR_APP_USER_DATA
+- android.permission.FORCE_STOP_PACKAGES
+- android.permission.KILL_BACKGROUND_PROCESSES
+- android.permission.GET_PACKAGE_SIZE
+- android.permission.INTERACT_ACROSS_USERS
+- android.permission.MANAGE_USERS
+
+15. CLIPBOARD AND INPUT
+- android.permission.READ_CLIPBOARD_IN_BACKGROUND
+- android.permission.WRITE_CLIPBOARD
+- android.permission.INJECT_EVENTS
+
+16. WALLPAPER, DISPLAY, AND SCREEN CAPTURE
+- android.permission.INTERNAL_SYSTEM_WINDOW
+- android.permission.CAPTURE_VIDEO_OUTPUT
+- android.permission.CAPTURE_SECURE_VIDEO_OUTPUT
+- android.permission.READ_FRAME_BUFFER
+
+17. BATTERY, POWER, AND DEVICE STATUS
+- android.permission.DEVICE_POWER
+- android.permission.BATTERY_STATS
+
+18. BIOMETRICS AND AUTHENTICATION
+- android.permission.AUTHENTICATE_ACCOUNTS
+- android.permission.MANAGE_ACCOUNTS
+- android.permission.MANAGE_CREDENTIALS
+
+19. BLUETOOTH, NEARBY DEVICES, AND COMPANION DEVICES
+- android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+
+20. ALARMS, TIME, AND SCHEDULING
+- android.permission.SET_ALARM
+
+21. VIBRATION AND HAPTICS
+- android.permission.VIBRATE
+
+22. ACCOUNTS AND SYNCHRONIZATION
+- android.permission.USE_CREDENTIALS
+- android.permission.READ_SYNC_SETTINGS
+- android.permission.WRITE_SYNC_SETTINGS
+- android.permission.READ_SYNC_STATS
+- android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE
+
+23. VOIP AND TELECOMMUNICATIONS
+- android.permission.MANAGE_OWN_CALLS
+- android.permission.ANSWER_PHONE_CALLS
+- android.permission.CALL_PHONE
+- android.permission.READ_PHONE_STATE
+- android.permission.ACCEPT_HANDOVER
+- android.permission.USE_SIP
+- android.permission.BIND_TELECOM_CONNECTION_SERVICE
+- android.permission.BIND_SCREENING_SERVICE
+- android.permission.BIND_INCALL_SERVICE
+
+24. PRINTING, MEDIA, AND OTHER SERVICE FEATURES
+- android.permission.BIND_PRINT_SERVICE
+- android.permission.BIND_MIDI_DEVICE_SERVICE
+- android.permission.BIND_DREAM_SERVICE
+- android.permission.BIND_TEXT_SERVICE
+- android.permission.BIND_VR_LISTENER_SERVICE
+- android.permission.BIND_TV_INPUT
+- android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+- android.permission.BIND_QUICK_SETTINGS_TILE
+- android.permission.BIND_AUTOFILL_SERVICE
+- android.permission.BIND_VPN_SERVICE
+- android.permission.BIND_WALLPAPER
+- android.permission.BIND_JOB_SERVICE
+
+25. ACCESSIBILITY SERVICE
+- android.permission.BIND_ACCESSIBILITY_SERVICE
+- android.permission.SYSTEM_ALERT_WINDOW
+- android.permission.RETRIEVE_WINDOW_CONTENT
+- android.permission.INJECT_EVENTS
+
+26. VPN AND NETWORK CONTROL
+- android.permission.NETWORK_SETTINGS
+- android.permission.CONNECTIVITY_INTERNAL
+
+27. SYSTEM OR PRIVILEGED APPLICATIONS
+- android.permission.WRITE_SECURE_SETTINGS
+- android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+
+28. ADDITIONAL ACCOUNT/SERVICE-RELATED BINDING PERMISSIONS
+- android.permission.BIND_DEVICE_ADMIN
+- android.permission.BIND_ACCESSIBILITY_SERVICE
+- android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+- android.permission.BIND_VPN_SERVICE
+- android.permission.BIND_TELECOM_CONNECTION_SERVICE
+- android.permission.BIND_SCREENING_SERVICE
+- android.permission.BIND_INCALL_SERVICE
+- android.permission.BIND_PRINT_SERVICE
+- android.permission.BIND_MIDI_DEVICE_SERVICE
+- android.permission.BIND_DREAM_SERVICE
+- android.permission.BIND_TEXT_SERVICE
+- android.permission.BIND_VR_LISTENER_SERVICE
+- android.permission.BIND_TV_INPUT
+- android.permission.BIND_QUICK_SETTINGS_TILE
+- android.permission.BIND_AUTOFILL_SERVICE
+- android.permission.BIND_WALLPAPER
+- android.permission.BIND_JOB_SERVICE
+- android.permission.BIND_INPUT_METHOD
+
+IMPLEMENTATION NOTES
+- Service-binding permissions are generally declared on the relevant service component using android:permission; they are not ordinary runtime permissions to request in the usual way.
+- A VPN service normally declares android.permission.BIND_VPN_SERVICE on its service component and includes the android.net.VpnService intent action.
+- Device-owner, system, signature, or privileged capabilities require the appropriate Android provisioning, signing, role, or system-level access; listing them here does not enable those capabilities.
+- Ask users for clear, informed consent and provide a visible way to understand and disable optional access.
